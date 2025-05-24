@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    const tg = window.Telegram.WebApp;
+    tg.ready();
+    tg.expand();
+  }, []);
+
+  const products = [
+    {
+      name: 'Apple Pie',
+      image: 'https://via.placeholder.com/150',
+      farm: 'Darks Farms 2k25',
+    },
+    {
+      name: 'Gmo x Banana Jungle Cake',
+      image: 'https://via.placeholder.com/150',
+      farm: 'Darks Farms 2k25',
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-900 text-white p-4">
+      <h1 className="text-2xl font-bold mb-4 text-center">BROLY 69</h1>
+
+      <div className="flex gap-2 mb-4">
+        <select className="flex-1 p-2 bg-gray-800 rounded">
+          <option>Toutes les catégories</option>
+        </select>
+        <select className="flex-1 p-2 bg-gray-800 rounded">
+          <option>Toutes les farms</option>
+        </select>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+        {products.map((product, idx) => (
+          <div key={idx} className="bg-gray-800 rounded-xl p-2">
+            <img src={product.image} alt={product.name} className="rounded mb-2 w-full" />
+            <div className="text-sm font-semibold">{product.name}</div>
+            <div className="text-xs text-gray-400">{product.farm}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="fixed bottom-0 left-0 right-0 bg-gray-800 flex justify-around items-center py-2 rounded-t-xl">
+        <button className="text-sm">Menu</button>
+        <button className="text-sm">Infos</button>
+        <button className="text-sm">Canal</button>
+        <button className="text-sm">Contact</button>
+      </div>
     </div>
   );
 }
-
-export default App;
