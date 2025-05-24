@@ -2,20 +2,24 @@ import { useEffect } from 'react';
 
 export default function App() {
   useEffect(() => {
-    const tg = window.Telegram.WebApp;
-    tg.ready();
-    tg.expand();
+    if (window.Telegram && window.Telegram.WebApp) {
+      const tg = window.Telegram.WebApp;
+      tg.ready();
+      tg.expand();
+    } else {
+      console.log("Telegram WebApp not available");
+    }
   }, []);
 
   const products = [
     {
       name: 'Apple Pie',
-      image: 'https://via.placeholder.com/150',
+      image: 'https://i.imgur.com/zfThsxn.jpeg',
       farm: 'Darks Farms 2k25',
     },
     {
       name: 'Gmo x Banana Jungle Cake',
-      image: 'https://via.placeholder.com/150',
+      image: 'https://i.imgur.com/zfThsxn.jpeg',
       farm: 'Darks Farms 2k25',
     },
   ];
