@@ -14,12 +14,12 @@ export default function App() {
   const products = [
     {
       name: 'Apple Pie',
-      image: 'https://i.imgur.com/zfThsxn.jpeg',
+      image: 'https://www.smokingpaper.com/wp-content/uploads/2024/05/%C2%BFQue-es-Beldia-Hash.jpg',
       farm: 'Darks Farms 2k25',
     },
     {
       name: 'Gmo x Banana Jungle Cake',
-      image: 'https://i.imgur.com/zfThsxn.jpeg',
+      image: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
       farm: 'Darks Farms 2k25',
     },
   ];
