@@ -12,35 +12,121 @@ export default function App() {
 
   const products = [
     {
-      name: 'Apple Pie',
-      thumbnail: 'https://www.smokingpaper.com/wp-content/uploads/2024/05/Que-es-Beldia-Hash.jpg', // IMAGEN para la pantalla principal
+      name: 'Frozen Sift Supreme',
+      thumbnail: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
       video: 'https://www.w3schools.com/html/mov_bbb.mp4',
       farm: 'Darks Farms 2k25',
-      category: 'Hash',
-      description: 'Les images parlent d\'elles meme\nMuter à froid le rendu est incroyable\nUnseul mot d\'ordre PÉPITE !',
+      category: 'Frozen Sift',
+      description: 'Frozen Sift de qualité supérieure, parfait pour les connaisseurs.',
       formatPrices: [
-        { weight: '5g', price: '70€' },
-        { weight: '10g', price: '130€' },
-        { weight: '25g', price: '260€' },
-        { weight: '50g', price: '450€' },
-        { weight: '100g', price: '850€' },
+        { weight: '5g', price: '80€' },
+        { weight: '10g', price: '150€' },
+        { weight: '25g', price: '350€' },
       ],
       telegramLink: 'https://t.me/tuusuario',
       signalLink: 'https://signal.me/#p/tuusuario',
     },
     {
-      name: 'Gmo x Banana Jungle Cake',
+      name: '90u Premium Hash',
+      thumbnail: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
+      video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+      farm: 'No Farm',
+      category: '90u',
+      description: 'Hash 90u, pureté exceptionnelle, effet relaxant.',
+      formatPrices: [
+        { weight: '5g', price: '85€' },
+        { weight: '10g', price: '160€' },
+        { weight: '25g', price: '370€' },
+      ],
+      telegramLink: 'https://t.me/tuusuario',
+      signalLink: 'https://signal.me/#p/tuusuario',
+    },
+    {
+      name: 'Beldia Royal',
+      thumbnail: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
+      video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+      farm: 'Maison HH',
+      category: 'BELDIA',
+      description: 'Beldia marocaine, arôme intense et authentique.',
+      formatPrices: [
+        { weight: '5g', price: '60€' },
+        { weight: '10g', price: '110€' },
+        { weight: '25g', price: '250€' },
+      ],
+      telegramLink: 'https://t.me/tuusuario',
+      signalLink: 'https://signal.me/#p/tuusuario',
+    },
+    {
+      name: 'Cali Sunset Weed',
+      thumbnail: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
+      video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+      farm: 'Must Hash us',
+      category: 'Cali',
+      description: 'Cali Sunset Weed - parfum tropical et effet euphorique.',
+      formatPrices: [
+        { weight: '5g', price: '90€' },
+        { weight: '10g', price: '170€' },
+        { weight: '25g', price: '400€' },
+      ],
+      telegramLink: 'https://t.me/tuusuario',
+      signalLink: 'https://signal.me/#p/tuusuario',
+    },
+    {
+      name: 'ICE WPFF ⭐⭐⭐⭐⭐',
       thumbnail: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
       video: 'https://www.w3schools.com/html/mov_bbb.mp4',
       farm: 'Darks Farms 2k25',
-      category: 'Weed',
-      description: 'Gmo x Banana Jungle Cake - arôme intense et effet relaxant.\nUn hash parfait pour se détendre.',
+      category: 'ICE WPFF ⭐⭐⭐⭐⭐',
+      description: 'ICE WPFF - extraction 5 étoiles pour connaisseurs.',
+      formatPrices: [
+        { weight: '5g', price: '95€' },
+        { weight: '10g', price: '180€' },
+        { weight: '25g', price: '420€' },
+      ],
+      telegramLink: 'https://t.me/tuusuario',
+      signalLink: 'https://signal.me/#p/tuusuario',
+    },
+    {
+      name: 'Mousse Premium',
+      thumbnail: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
+      video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+      farm: 'Maison HH',
+      category: 'Mousse Premium',
+      description: 'Mousse hash premium, texture légère et effet fort.',
       formatPrices: [
         { weight: '5g', price: '75€' },
         { weight: '10g', price: '140€' },
-        { weight: '25g', price: '270€' },
-        { weight: '50g', price: '460€' },
-        { weight: '100g', price: '860€' },
+        { weight: '25g', price: '320€' },
+      ],
+      telegramLink: 'https://t.me/tuusuario',
+      signalLink: 'https://signal.me/#p/tuusuario',
+    },
+    {
+      name: 'Topshelf Hash Deluxe',
+      thumbnail: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
+      video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+      farm: 'Must Hash us',
+      category: 'Topshelf',
+      description: 'Topshelf Hash - pureté extrême et arômes riches.',
+      formatPrices: [
+        { weight: '5g', price: '100€' },
+        { weight: '10g', price: '190€' },
+        { weight: '25g', price: '450€' },
+      ],
+      telegramLink: 'https://t.me/tuusuario',
+      signalLink: 'https://signal.me/#p/tuusuario',
+    },
+    {
+      name: 'Frozen Sift 73u Mix',
+      thumbnail: 'https://cbd-alchemy.com/app/uploads/sites/2/2024/07/article-types-of-hash-complete-guide-9-1024x682.jpeg',
+      video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+      farm: 'No Farm',
+      category: '90u 73u Mix',
+      description: 'Frozen Sift 73u Mix - extraction multiple haute qualité.',
+      formatPrices: [
+        { weight: '5g', price: '85€' },
+        { weight: '10g', price: '160€' },
+        { weight: '25g', price: '360€' },
       ],
       telegramLink: 'https://t.me/tuusuario',
       signalLink: 'https://signal.me/#p/tuusuario',
@@ -71,7 +157,6 @@ export default function App() {
       <h1 className="title">BROLY 69</h1>
 
       {selectedProduct ? (
-        // PANTALLA DETALLE PRODUCTO
         <div className="product-detail">
           <button onClick={handleBack} className="back-button">⬅️ Retour</button>
 
@@ -111,18 +196,26 @@ export default function App() {
           </div>
         </div>
       ) : (
-        // PANTALLA LISTADO
         <>
           <div className="filters">
             <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
               <option value="">Toutes les catégories</option>
-              <option value="Hash">Hash</option>
-              <option value="Weed">Weed</option>
+              <option value="Frozen Sift">Frozen Sift</option>
+              <option value="90u">90u</option>
+              <option value="90u 73u Mix">90u 73u Mix</option>
+              <option value="BELDIA">BELDIA</option>
+              <option value="Cali">Cali</option>
+              <option value="Topshelf">Topshelf</option>
+              <option value="ICE WPFF ⭐⭐⭐⭐⭐">ICE WPFF ⭐⭐⭐⭐⭐</option>
+              <option value="Mousse Premium">Mousse Premium</option>
             </select>
 
             <select value={selectedFarm} onChange={(e) => setSelectedFarm(e.target.value)}>
               <option value="">Toutes les farms</option>
               <option value="Darks Farms 2k25">Darks Farms 2k25</option>
+              <option value="No Farm">No Farm</option>
+              <option value="Maison HH">Maison HH</option>
+              <option value="Must Hash us">Must Hash us</option>
             </select>
           </div>
 
